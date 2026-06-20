@@ -27,12 +27,6 @@ Commands available in `atom-workspace`:
 - `language-log-plus:toggle-log-panel`: toggle log filter panel.
 - `language-log-plus:toggle-focus`: move focus between the filter input and the editor.
 
-## Settings
-
-- `showFilterBar` (default `true`): automatically show the log filter panel when the active editor uses the Log grammar.
-- `adjacentLines` (default `0`): keep this many lines visible before and after each text filter match.
-- `foldPosition` (default `end-of-line`): choose where folded hidden lines are anchored, either `end-of-line` or `between-lines`.
-
 ## Contributing
 
 Got ideas to make this package better, found a bug, or want to help add new log formats? Just drop your thoughts on GitHub. Any feedback is welcome!
