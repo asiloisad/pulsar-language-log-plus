@@ -1,5 +1,5 @@
 {
   "atom-workspace": {
-    "ctrl-alt-l": "log:toggle-log-panel"
+    "ctrl-alt-l": "language-log-plus:toggle-log-panel"
   }
 }

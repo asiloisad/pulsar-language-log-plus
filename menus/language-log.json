@@ -4,11 +4,11 @@
       "label": "Packages",
       "submenu": [
         {
-          "label": "Language-log",
+          "label": "Language Log Plus",
           "submenu": [
             {
               "label": "Toggle filter",
-              "command": "log:toggle-log-panel"
+              "command": "language-log-plus:toggle-log-panel"
             }
           ]
         }
