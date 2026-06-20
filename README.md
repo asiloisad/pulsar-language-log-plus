@@ -1,4 +1,4 @@
-# Log syntax highlighting and filtering in Atom [![Build Status](https://travis-ci.org/mrodalgaard/language-log.svg)](https://travis-ci.org/mrodalgaard/language-log)
+# Log syntax highlighting and filtering in Atom [![Build Status](https://travis-ci.org/asiloisad/pulsar-language-log-plus.svg)](https://travis-ci.org/asiloisad/pulsar-language-log-plus)
 
 > DEPRECATED: This package will no longer be maintained by me since I have switched permanently to VSCode.
 
@@ -6,7 +6,7 @@ Adds syntax colors for common log formats in [Atom](https://atom.io/) - improvin
 
 Also adds a filtering bottom bar to separate out the statements you are not interested in (can be removed through package config).
 
-![language-log](https://raw.githubusercontent.com/mrodalgaard/language-log/master/screenshots/preview.png)
+![language-log](https://raw.githubusercontent.com/asiloisad/pulsar-language-log-plus/master/screenshots/preview.png)
 
 An Atom grammar that helps you quickly extract the important parts of various log files.
 
@@ -19,7 +19,7 @@ The filtering bottom bar contains the following elements:
 
 NOTE: *soft wrap* is disabled by default and can be enabled via the package settings page.
 
-There are a whole bunch of standard and non-standard log formats out there. Create an [issue](https://github.com/mrodalgaard/language-log/issues/new) (or even better a PR) if you are missing a format.
+There are a whole bunch of standard and non-standard log formats out there. Create an [issue](https://github.com/asiloisad/pulsar-language-log-plus/issues/new) (or even better a PR) if you are missing a format.
 
 ## Notes
 
