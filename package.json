@@ -1,6 +1,6 @@
 {
   "name": "language-log-plus",
-  "description": "Log syntax highlighting and filtering",
+  "description": "Log syntax highlighting with an inline filter panel",
   "version": "0.0.0",
   "license": "MIT",
   "main": "./lib/main",
@@ -16,43 +16,57 @@
   },
   "configSchema": {
     "showFilterBar": {
+      "order": 1,
+      "title": "Show filter bar",
+      "description": "Automatically show the log filter panel when the active editor uses the Log grammar.",
       "type": "boolean",
       "default": true
     },
     "tail": {
+      "order": 2,
+      "title": "Tail file changes",
+      "description": "Keep the editor scrolled to the bottom when the log buffer changes.",
       "type": "boolean",
       "default": false
     },
-    "foldPosition": {
-      "type": "string",
-      "default": "end-of-line",
-      "description": "Determine if the fold appears at the end of a filtered line or between two filtered lines.",
-      "enum": [
-        {
-          "value": "end-of-line",
-          "description": "Fold block at the end of filtered lines."
-        },
-        {
-          "value": "between-lines",
-          "description": "Fold block between two filtered lines."
-        }
-      ]
-    },
-    "useMultiLinesLogEntrySupport": {
-      "type": "boolean",
-      "title": "Use multi-lines log entry support (experimental)",
-      "default": false,
-      "description": "Displays the whole log entry after filter instead of only the line even if the log entry has several lines."
-    },
     "caseInsensitive": {
+      "order": 3,
+      "title": "Case insensitive filter",
+      "description": "Match filter text regardless of letter case.",
       "type": "boolean",
       "default": true
     },
     "adjacentLines": {
+      "order": 4,
+      "title": "Adjacent visible lines",
+      "description": "Keep this many lines visible before and after each text filter match.",
       "type": "integer",
-      "title": "Number of lines displayed above and below filter result:",
-      "default": 0,
-      "minimum": 0
+      "minimum": 0,
+      "default": 0
+    },
+    "foldPosition": {
+      "order": 5,
+      "title": "Fold position",
+      "type": "string",
+      "description": "Choose where folded hidden lines are anchored in the editor.",
+      "enum": [
+        {
+          "value": "end-of-line",
+          "description": "At the end of the line before the hidden block."
+        },
+        {
+          "value": "between-lines",
+          "description": "Between the visible lines around the hidden block."
+        }
+      ],
+      "default": "end-of-line"
+    },
+    "useMultiLinesLogEntrySupport": {
+      "order": 6,
+      "type": "boolean",
+      "title": "Use multi-line log entry support",
+      "description": "Treat timestamped multi-line entries as one filterable log record. Experimental.",
+      "default": false
     }
   },
   "dependencies": {
