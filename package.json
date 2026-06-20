@@ -1,0 +1,26 @@
+{
+  "name": "language-log",
+  "main": "./lib/main",
+  "version": "1.10.1",
+  "description": "Log syntax highlighting and filtering",
+  "keywords": [
+    "log",
+    "syntax",
+    "highlight",
+    "syslog"
+  ],
+  "repository": "https://github.com/MRodalgaard/language-log",
+  "homepage": "https://github.com/MRodalgaard/language-log",
+  "license": "MIT",
+  "engines": {
+    "atom": ">= 1.13"
+  },
+  "dependencies": {
+    "atom-space-pen-views": "^2.1.0",
+    "moment": "^2.10.6"
+  },
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/MRodalgaard/language-log/issues"
+  }
+}
