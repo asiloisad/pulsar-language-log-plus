@@ -105,20 +105,6 @@
     }
   }
 
-  .icon-scroll {
-    overflow: hidden;
-    background: @text-color-success !important;
-    &::before {
-      animation: scroll-down 1s linear infinite;
-      @keyframes scroll-down {
-        0% { transform: translateY(0%); }
-        49% { transform: translateY(70%); }
-        50% { transform: translateY(-70%); }
-        100% { transform: translateY(0%); }
-      }
-    }
-  }
-
   .input-block {
     display: flex;
     flex-wrap: wrap;
