@@ -1,7 +1,7 @@
 {
   "name": "language-log-plus",
   "description": "Log syntax highlighting with an inline filter panel",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "main": "./lib/main",
   "keywords": [
