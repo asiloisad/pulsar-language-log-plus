@@ -19,6 +19,10 @@
       "language-log-plus:toggle-log-panel"
     ]
   },
+  "styleSheets": [
+    "language-log-plus",
+    "language-log-plus-view"
+  ],
   "configSchema": {
     "showFilterBar": {
       "type": "boolean",

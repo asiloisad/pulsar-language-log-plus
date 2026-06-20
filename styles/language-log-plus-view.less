@@ -1,13 +1,18 @@
 @import 'ui-variables';
 
-.log-view {
+.language-log-plus-view {
   @item-width: 300px;
   @item-color: #31363f;
+  @min-width: 200px;
 
-  padding: @component-padding / 2;
+  -webkit-user-select: none;
+  padding: (@component-padding / 2);
+  overflow-x: auto;
 
   .header {
-    padding: @component-padding / 2;
+    padding: (@component-padding / 4) (@component-padding / 2);
+    min-width: @min-width;
+    line-height: 1.75;
 
     .description {
       display: inline-block;
@@ -20,8 +25,18 @@
     }
   }
 
+  .header-item {
+    margin: (@component-padding / 4) 0;
+  }
+
+  .options-label {
+    color: @text-color-subtle;
+    position: relative;
+  }
+
   .input-block.log-timestamps {
-    padding: @component-padding / 2;
+    padding: (@component-padding / 2);
+    min-width: @min-width;
 
     .log-timestamps-line {
       border-bottom: 2px solid @item-color;
@@ -60,7 +75,7 @@
   }
 
   .close-button {
-    margin-left: @component-padding * 2;
+    margin-left: @component-padding;
     cursor: pointer;
     color: @text-color-subtle;
     &:hover {
@@ -69,6 +84,7 @@
     .icon::before {
       margin-right: 0;
       text-align: center;
+      vertical-align: middle;
     }
   }
 
@@ -89,11 +105,12 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    min-width: @min-width;
 
     .input-block-item {
       display: flex;
       flex: 1 1 @item-width;
-      padding: @component-padding / 2;
+      padding: (@component-padding / 2);
 
       .btn-group {
         display: flex;
@@ -120,7 +137,7 @@
     }
 
     .btn-group-level {
-      flex: 1 1 @item-width * 2;
+      flex: 1 1 (@item-width * 2);
 
       .btn {
         flex: 1 1 20%;
