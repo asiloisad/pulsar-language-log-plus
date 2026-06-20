@@ -22,22 +22,8 @@
       "type": "boolean",
       "default": true
     },
-    "tail": {
-      "order": 2,
-      "title": "Tail file changes",
-      "description": "Keep the editor scrolled to the bottom when the log buffer changes.",
-      "type": "boolean",
-      "default": false
-    },
-    "caseInsensitive": {
-      "order": 3,
-      "title": "Case insensitive filter",
-      "description": "Match filter text regardless of letter case.",
-      "type": "boolean",
-      "default": true
-    },
     "adjacentLines": {
-      "order": 4,
+      "order": 2,
       "title": "Adjacent visible lines",
       "description": "Keep this many lines visible before and after each text filter match.",
       "type": "integer",
@@ -45,7 +31,7 @@
       "default": 0
     },
     "foldPosition": {
-      "order": 5,
+      "order": 3,
       "title": "Fold position",
       "type": "string",
       "description": "Choose where folded hidden lines are anchored in the editor.",
@@ -60,13 +46,6 @@
         }
       ],
       "default": "end-of-line"
-    },
-    "useMultiLinesLogEntrySupport": {
-      "order": 6,
-      "type": "boolean",
-      "title": "Use multi-line log entry support",
-      "description": "Treat timestamped multi-line entries as one filterable log record. Experimental.",
-      "default": false
     }
   },
   "dependencies": {

@@ -12,7 +12,6 @@ Fork of [language-log](https://github.com/robertrossmann/language-log).
 - **Log level filters**: Hide verbose, info, debug, warning, or error lines with joined toolbar buttons.
 - **Tail mode**: Keep the editor scrolled to the bottom when the log buffer changes.
 - **Context lines**: Keep adjacent lines visible around text filter matches.
-- **Multi-line entries**: Optionally treat timestamped multi-line entries as one filterable log record.
 
 ## Installation
 
