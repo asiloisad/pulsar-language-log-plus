@@ -14,7 +14,7 @@ Fork of [language-log](https://github.com/MRodalgaard/language-log).
 - **Log level filters**: Hide verbose, info, debug, warning, or error lines with joined toolbar buttons.
 - **Tail mode**: Keep the editor scrolled to the bottom when the log buffer changes.
 - **Context lines**: Keep adjacent lines visible around text filter matches.
-- **Persistent state**: Each editor remembers its filter query, regex and case sensitivity toggles, tail mode, and hidden log levels when you switch between log files.
+- **Persistent state**: Each editor remembers its filter query, regex and case sensitivity toggles, tail mode, and hidden log levels per file across sessions.
 
 ## Installation
 
