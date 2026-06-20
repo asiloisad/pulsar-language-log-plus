@@ -9,6 +9,10 @@
             'label': 'Toggle filter'
             'command': 'language-log-plus:toggle-log-panel'
           }
+          {
+            'label': 'Toggle focus'
+            'command': 'language-log-plus:toggle-focus'
+          }
         ]
       }
     ]

@@ -22,6 +22,7 @@ To install `language-log-plus` search for [language-log-plus](https://web.pulsar
 Commands available in `atom-workspace`:
 
 - `language-log-plus:toggle-log-panel`: toggle log filter panel.
+- `language-log-plus:toggle-focus`: move focus between the filter input and the editor.
 
 ## Contributing
 
