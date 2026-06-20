@@ -1,32 +1,29 @@
-# Log syntax highlighting and filtering in Atom [![Build Status](https://travis-ci.org/asiloisad/pulsar-language-log-plus.svg)](https://travis-ci.org/asiloisad/pulsar-language-log-plus)
+# language-log-plus
 
-> DEPRECATED: This package will no longer be maintained by me since I have switched permanently to VSCode.
+Log syntax highlighting with an inline filter panel.
 
-Adds syntax colors for common log formats in [Atom](https://atom.io/) - improving visual grepping.
+Fork of [language-log](https://github.com/robertrossmann/language-log).
 
-Also adds a filtering bottom bar to separate out the statements you are not interested in (can be removed through package config).
+## Features
 
-![language-log](https://raw.githubusercontent.com/asiloisad/pulsar-language-log-plus/master/screenshots/preview.png)
+- **Log grammar**: Highlights common log formats including generic logs, syslog, Apache, Android, iOS, Python, npm, JBoss, CBS, and other application logs.
+- **Inline filter panel**: Adds a bottom filter panel for log files using the `source.log` grammar.
+- **Regex filtering**: Filters visible log lines with a regular expression. Prefix the query with `!` to invert the match.
+- **Log level filters**: Hide verbose, info, debug, warning, or error lines with joined toolbar buttons.
+- **Tail mode**: Keep the editor scrolled to the bottom when the log buffer changes.
+- **Context lines**: Keep adjacent lines visible around text filter matches.
+- **Multi-line entries**: Optionally treat timestamped multi-line entries as one filterable log record.
 
-An Atom grammar that helps you quickly extract the important parts of various log files.
+## Installation
 
-The filtering bottom bar contains the following elements:
+To install `language-log-plus` search for [language-log-plus](https://web.pulsar-edit.dev/packages/language-log-plus) in the Install pane of the Pulsar settings or run `ppm install language-log-plus`. Alternatively, you can run `ppm install asiloisad/pulsar-language-log-plus` to install a package directly from the GitHub repository.
 
-* Text filter input which filters based on regex expression (prepend an exclamation mark (`!`) to perform a reverse filter).
-* Tail button (`⇩`) which enables tailing of log changes (move to the bottom of the file).
-* Case sensitive/insensitive search button (`Aa`).
-* Level filter buttons which filters based on log level.
+## Commands
 
-NOTE: *soft wrap* is disabled by default and can be enabled via the package settings page.
+Commands available in `atom-workspace`:
 
-There are a whole bunch of standard and non-standard log formats out there. Create an [issue](https://github.com/asiloisad/pulsar-language-log-plus/issues/new) (or even better a PR) if you are missing a format.
+- `language-log-plus:toggle-log-panel`: toggle log filter panel.
 
-## Notes
+## Contributing
 
-When asking for a certain log type support, please provide an example log file showing the general format and the different log levels.
-
-Files above 10,000 lines does not get grammar applied according to Atom.
-
-> Contributions, bug reports and feature requests are very welcome.
-
-> &nbsp; &nbsp; _- Martin_
+Got ideas to make this package better, found a bug, or want to help add new log formats? Just drop your thoughts on GitHub. Any feedback is welcome!
