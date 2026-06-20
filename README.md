@@ -2,7 +2,7 @@
 
 Log syntax highlighting with an inline filter panel.
 
-Fork of [language-log](https://github.com/robertrossmann/language-log).
+Fork of [language-log](https://github.com/MRodalgaard/language-log).
 
 ## Features
 
