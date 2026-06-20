@@ -49,7 +49,6 @@
     }
   },
   "dependencies": {
-    "@asiloisad/select-list": "^1.6.3",
     "moment": "^2.30.1"
   }
 }
