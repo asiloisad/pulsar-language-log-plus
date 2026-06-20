@@ -9,8 +9,8 @@ Fork of [language-log](https://github.com/robertrossmann/language-log).
 - **Log grammar**: Highlights common log formats including generic logs, syslog, Apache, Android, iOS, Python, npm, JBoss, CBS, and other application logs.
 - **Inline filter panel**: Adds a bottom filter panel for log files using the `source.log` grammar.
 - **Text filtering**: Filters visible log lines by the typed query, matched literally by default.
-- **Regex filtering**: Toggle the `.*` button to match the query as a regular expression instead of literal text.
-- **Case sensitivity**: Toggle case sensitive matching for the text filter with the `Aa` button.
+- **Regex filtering**: Toggle the regex button to match the query as a regular expression instead of literal text.
+- **Case sensitivity**: Toggle case sensitive matching for the text filter with the case button.
 - **Log level filters**: Hide verbose, info, debug, warning, or error lines with joined toolbar buttons.
 - **Tail mode**: Keep the editor scrolled to the bottom when the log buffer changes.
 - **Context lines**: Keep adjacent lines visible around text filter matches.
