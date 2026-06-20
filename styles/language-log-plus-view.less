@@ -32,6 +32,26 @@
   .options-label {
     color: @text-color-subtle;
     position: relative;
+
+    .btn-group-options {
+      display: inline-flex;
+      margin-left: 0.5em;
+      margin-top: -0.1em;
+
+      .btn {
+        width: 36px;
+        padding: 0;
+        line-height: 1.75;
+        text-align: center;
+      }
+
+      .btn.icon::before {
+        margin-right: 0;
+        width: auto;
+        line-height: inherit;
+        vertical-align: middle;
+      }
+    }
   }
 
   .input-block.log-timestamps {
@@ -63,17 +83,6 @@
     }
   }
 
-  .btn-icon {
-    line-height: 0;
-    overflow: hidden;
-
-    &::before {
-      line-height: 0.5;
-      font-size: 32px;
-      width: 32px;
-    }
-  }
-
   .close-button {
     margin-left: @component-padding;
     cursor: pointer;
@@ -89,13 +98,14 @@
   }
 
   .icon-scroll {
+    overflow: hidden;
     background: @text-color-success !important;
     &::before {
       animation: scroll-down 1s linear infinite;
       @keyframes scroll-down {
         0% { transform: translateY(0%); }
-        49% { transform: translateY(150%); }
-        50% { transform: translateY(-150%); }
+        49% { transform: translateY(70%); }
+        50% { transform: translateY(-70%); }
         100% { transform: translateY(0%); }
       }
     }
@@ -135,15 +145,20 @@
     .btn-group {
       flex: 1 1 @item-width;
     }
+  }
 
-    .btn-group-level {
-      flex: 1 1 (@item-width * 2);
+  .filter-container {
+    .editor-container {
+      flex: 1 1 auto;
+      min-width: @min-width;
+    }
 
-      .btn {
-        flex: 1 1 20%;
-        padding: 0;
-        text-align: center;
-      }
+    .input-block-item:not(.editor-container) {
+      flex: 0 0 auto;
+    }
+
+    .btn-next {
+      min-width: 84px;
     }
   }
 
