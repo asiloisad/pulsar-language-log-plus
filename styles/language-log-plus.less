@@ -1,18 +1,22 @@
-@import 'ui-variables';
+@import "ui-variables";
 
 atom-text-editor.editor .syntax--log,
 .language-log-plus-view .input-block,
 .language-log-plus-view .btn-group-options {
-  .syntax--log-error, .syntax--log-failed {
+  .syntax--log-error,
+  .syntax--log-failed {
     color: @text-color-error;
   }
-  .syntax--log-warning, .syntax--log-denied {
+  .syntax--log-warning,
+  .syntax--log-denied {
     color: @text-color-warning;
   }
-  .syntax--log-debug, .syntax--log-success {
+  .syntax--log-debug,
+  .syntax--log-success {
     color: @text-color-success;
   }
-  .syntax--log-info, .syntax--log-patch {
+  .syntax--log-info,
+  .syntax--log-patch {
     color: @text-color-info;
   }
   .syntax--log-verbose {
